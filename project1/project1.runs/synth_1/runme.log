@@ -1,0 +1,308 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/project1/project1.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/project1/project1.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 166619
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2014.008 ; gain = 404.801 ; free physical = 15913 ; free virtual = 36889
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/top.v:6]
+INFO: [Synth 8-6157] synthesizing module 'calculator' [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/calculator.v:7]
+WARNING: [Synth 8-567] referenced signal 'data1_pi' should be on the sensitivity list [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/calculator.v:22]
+WARNING: [Synth 8-567] referenced signal 'data2_pi' should be on the sensitivity list [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/calculator.v:22]
+WARNING: [Synth 8-567] referenced signal 'counter_pi' should be on the sensitivity list [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/calculator.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'calculator' (0#1) [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/calculator.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sevenSegDisplay' [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/display.v:65]
+INFO: [Synth 8-6157] synthesizing module 'segmentFormatter' [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/display.v:20]
+INFO: [Synth 8-226] default block is never used [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/display.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'segmentFormatter' (0#1) [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/display.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'sevenSegDisplay' (0#1) [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/display.v:65]
+INFO: [Synth 8-6157] synthesizing module 'clkdiv' [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/clock.v:11]
+	Parameter SIZE bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (0#1) [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/clock.v:11]
+INFO: [Synth 8-6157] synthesizing module 'increment' [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/clock.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'increment' (0#1) [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/clock.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/top.v:6]
+WARNING: [Synth 8-3917] design top has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[10] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[8] driven by constant 0
+WARNING: [Synth 8-7129] Port counter_pi[15] in module calculator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_pi[14] in module calculator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_pi[13] in module calculator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_pi[12] in module calculator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_pi[11] in module calculator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_pi[10] in module calculator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_pi[9] in module calculator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter_pi[8] in module calculator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2089.945 ; gain = 480.738 ; free physical = 15813 ; free virtual = 36790
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2107.758 ; gain = 498.551 ; free physical = 15811 ; free virtual = 36788
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2107.758 ; gain = 498.551 ; free physical = 15811 ; free virtual = 36788
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2107.758 ; gain = 0.000 ; free physical = 15811 ; free virtual = 36788
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/boolean.xdc]
+Finished Parsing XDC File [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/boolean.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/boolean.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2240.508 ; gain = 0.000 ; free physical = 15800 ; free virtual = 36777
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2240.543 ; gain = 0.000 ; free physical = 15799 ; free virtual = 36776
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15804 ; free virtual = 36781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15804 ; free virtual = 36781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15804 ; free virtual = 36781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'an_po_reg' in module 'sevenSegDisplay'
+WARNING: [Synth 8-327] inferring latch for variable 'result_po_reg' [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/calculator.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'ovflw_po_reg' [/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/FPGA_Project1/calculator.v:32]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                            00001 |                             1111
+*
+                 iSTATE0 |                            00010 |                             1110
+                 iSTATE1 |                            00100 |                             1101
+                 iSTATE2 |                            01000 |                             1011
+                  iSTATE |                            10000 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'an_po_reg' using encoding 'one-hot' in module 'sevenSegDisplay'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15802 ; free virtual = 36780
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   3 Input    4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design top has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[10] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[8] driven by constant 0
+WARNING: [Synth 8-3917] design top has port DP driven by constant 1
+WARNING: [Synth 8-7129] Port SW[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15776 ; free virtual = 36758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15762 ; free virtual = 36744
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15762 ; free virtual = 36744
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15762 ; free virtual = 36744
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15776 ; free virtual = 36758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15776 ; free virtual = 36758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15776 ; free virtual = 36758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15776 ; free virtual = 36758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15776 ; free virtual = 36758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15776 ; free virtual = 36758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    11|
+|3     |LUT1   |     2|
+|4     |LUT2   |     8|
+|5     |LUT3   |     3|
+|6     |LUT4   |    16|
+|7     |LUT5   |     6|
+|8     |LUT6   |    43|
+|9     |MUXF7  |     1|
+|10    |FDRE   |    55|
+|11    |LD     |     9|
+|12    |IBUF   |    13|
+|13    |OBUF   |    28|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15776 ; free virtual = 36758
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2240.543 ; gain = 498.551 ; free physical = 15776 ; free virtual = 36758
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2240.543 ; gain = 631.336 ; free physical = 15776 ; free virtual = 36758
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2240.543 ; gain = 0.000 ; free physical = 16004 ; free virtual = 36986
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2240.543 ; gain = 0.000 ; free physical = 16024 ; free virtual = 37006
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  LD => LDCE: 9 instances
+
+Synth Design complete | Checksum: 295a3c80
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 2240.543 ; gain = 956.305 ; free physical = 16024 ; free virtual = 37006
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1789.183; main = 1455.112; forked = 382.292
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3230.805; main = 2240.512; forked = 1022.309
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2264.520 ; gain = 0.000 ; free physical = 16024 ; free virtual = 37006
+INFO: [Common 17-1381] The checkpoint '/home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/project1/project1.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 24 00:04:17 2024...
