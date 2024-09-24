@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Tue Sep 24 00:04:31 2024
+| Date         : Tue Sep 24 15:01:25 2024
 | Host         : pop-os
 | Design       : design_1
 | Device       : xc7s50-csga324-1--

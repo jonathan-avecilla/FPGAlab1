@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Tue Sep 24 00:03:57 2024
-# Process ID: 166492
+# Start of session at: Tue Sep 24 15:00:52 2024
+# Process ID: 25927
 # Current directory: /home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/project1/project1.runs/synth_1
 # Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: /home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/project1/project1.runs/synth_1/top.vds
 # Journal file: /home/icarus/Documents/School/RICE/Academics/Fall2024/ELEC326/Lab1/FPGAlab1/project1/project1.runs/synth_1/vivado.jou
-# Running On: pop-os, OS: Linux, CPU Frequency: 1785.598 MHz, CPU Physical cores: 16, Host memory: 29220 MB
+# Running On: pop-os, OS: Linux, CPU Frequency: 1818.221 MHz, CPU Physical cores: 16, Host memory: 29220 MB
 #-----------------------------------------------------------
 source top.tcl -notrace

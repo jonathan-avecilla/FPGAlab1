@@ -1,35 +1,15 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="icarus" Host="pop-os" Pid="86352" HostCore="16" HostMemory="28535276">
+    <Process Command="vivado" Owner="icarus" Host="pop-os" Pid="20116" HostCore="16" HostMemory="28535288">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="icarus" Host="pop-os" Pid="102119" HostCore="16" HostMemory="28535276">
+    <Process Command="vivado" Owner="icarus" Host="pop-os" Pid="26043" HostCore="16" HostMemory="28535288">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="icarus" Host="pop-os" Pid="112883" HostCore="16" HostMemory="28535276">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="icarus" Host="pop-os" Pid="119051" HostCore="16" HostMemory="28535276">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="icarus" Host="pop-os" Pid="124674" HostCore="16" HostMemory="28535276">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="icarus" Host="pop-os" Pid="131385" HostCore="16" HostMemory="28535276">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="icarus" Host="pop-os" Pid="166888" HostCore="16" HostMemory="28535276">
+    <Process Command="vivado" Owner="icarus" Host="pop-os" Pid="30889" HostCore="16" HostMemory="28535288">
     </Process>
 </ProcessHandle>

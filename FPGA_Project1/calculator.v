@@ -45,7 +45,11 @@ module calculator(
 
         
         end else if (op_pi == 4'b1000) begin
-
+        
+            t = data1_pi + data2_pi;
+            result_po[3:0] = t[3:0];
+            ovflw_po = (data1_pi[3] == data2_pi[3]) && (t[3] != data1_pi[3]); //if signs are the same but overflow is not the same sign, ovflow occured
+            result_po[7:4] = 4'b0000;
    
         end else begin
             result_po = counter_pi[7:0];

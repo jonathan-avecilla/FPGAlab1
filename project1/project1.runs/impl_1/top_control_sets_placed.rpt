@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Tue Sep 24 00:04:31 2024
+| Date         : Tue Sep 24 15:01:26 2024
 | Host         : pop-os running 64-bit Pop!_OS 22.04 LTS
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     4 |
-|    Minimum number of control sets                        |     4 |
+| Total control sets                                       |     3 |
+|    Minimum number of control sets                        |     3 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
 | Unused register locations in slices containing registers |    16 |
@@ -39,11 +39,11 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     4 |
+| Total control sets |     3 |
 | >= 0 to < 4        |     1 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     1 |
+| >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     1 |
 | >= 14 to < 16      |     0 |
@@ -58,7 +58,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              52 |           17 |
+| No           | No                    | No                     |              44 |           12 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |              12 |            5 |
@@ -70,13 +70,12 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------+---------------+------------------+------------------+----------------+--------------+
-|           Clock Signal          | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+---------------------------------+---------------+------------------+------------------+----------------+--------------+
-|  Icalc/ovflw_po_reg_i_2_n_0     |               |                  |                1 |              1 |         1.00 |
-|  Icalc/result_po_reg[7]_i_2_n_0 |               |                  |                4 |              8 |         2.00 |
-|  CLK_IBUF_BUFG                  | Iclkdiv/E[0]  |                  |                5 |             12 |         2.40 |
-|  CLK_IBUF_BUFG                  |               |                  |               12 |             43 |         3.58 |
-+---------------------------------+---------------+------------------+------------------+----------------+--------------+
++-----------------------------+---------------+------------------+------------------+----------------+--------------+
+|         Clock Signal        | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------+---------------+------------------+------------------+----------------+--------------+
+|  Icalc/ovflw_po_reg_i_2_n_0 |               |                  |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG              | Iclkdiv/E[0]  |                  |                5 |             12 |         2.40 |
+|  CLK_IBUF_BUFG              |               |                  |               11 |             43 |         3.91 |
++-----------------------------+---------------+------------------+------------------+----------------+--------------+
 
 
